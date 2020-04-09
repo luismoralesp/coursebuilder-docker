@@ -2,7 +2,6 @@ version: '3.2'
 services:
   app:
     build: .
-    command: python2 /google-cloud-sdk/bin/dev_appserver.py app.yaml --port 8080 --host 0.0.0.0 --enable_host_checking=False
+    command: python2 /google-cloud-sdk/bin/dev_appserver.py app.yaml --port 80 --host 0.0.0.0 --enable_host_checking=False
     ports:
-      - "8080:8080"
-      - "8000:8000"
+      - "80:80"
